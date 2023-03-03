@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html>
+<body>
+
+<h1>JavaScript String Methods</h1>
+<h2>The fontcolor() Method</h2>
+
+<p id="demo1"></p>
+
+<p>The fontcolor() method is deprecated in JavaScript.</p>
+<p>Use a style attribute instead:</p>
+
+<p id="demo2"></p>
+
+<script>
+let text = "Hello World!";
+let result = text.fontcolor("green");
+document.getElementById("demo1").innerHTML = result;
+
+result = "<span style='color:green'>" + text + "</span>";
+document.getElementById("demo2").innerHTML = result;
+</script>
+
+</body>
+</html>
