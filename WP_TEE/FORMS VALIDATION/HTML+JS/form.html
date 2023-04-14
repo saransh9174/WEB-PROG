@@ -1,0 +1,54 @@
+<!DOCTYPE html>>
+<html>
+<head>
+<script>
+function valid(){
+  let x = document.forms["f"]["fname"].value;
+  let y=document.forms["f"]["psw"].value;
+  if(x ==""){
+   alert("Name must be filled");
+   return false;
+ }
+ if(y.length<6){
+    alert("Password less than 6 char");
+    return false;
+
+    
+ }
+}
+</script>
+</head>
+<body>
+<h2>Form</h2>
+    <form name="f" onsubmit="return valid()" method="post">
+     Name: <input type="text" name="fname">
+     Password: <input type="password" name="psw" required></br>
+     Email: <input type="email " name="mail"><br>
+     Choose your preference:<br>
+     <input type="radio" id="Veg" name="selection" value="Veg">
+     <label for="veg"> veg</label><br>
+     <input type="radio" id="Nonveg" name="selection" value="Nonveg">
+     <label for="Nonveg">Nonveg</label><br>
+     What do you associate with?:<br>
+     <input type="checkbox" id="c1" name="c1" value="Socialist">
+     <label for="c1">Socialist</label><br>
+     <input type="checkbox" id="c2" name="c1" value="Communist">
+     <label for="c1">Communist</label><br>
+
+     <label for="reg">Choose your religion</label>
+     <select id="reg" name="reg">
+        <option value="AK47">AK47</option>
+        <option value="Onion">Onion</option>
+     </select><br>
+
+
+
+
+     <input type="submit" value="Submit">
+
+
+   
+    </form>
+
+</body>
+</html>
