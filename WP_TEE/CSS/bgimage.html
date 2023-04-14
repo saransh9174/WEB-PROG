@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html>
+    <style>
+        body{
+            background-image: url("bg.png");
+            background-position: center;
+            background-repeat: no-repeat;
+            background-attachment: scroll; /*makes imgae fixed or scrollable */
+            
+        }
+       div.transbox{
+        margin:30px;
+        background-color: white;
+        border:1px solid black;
+        opacity:0.6;
+    
+       }
+       div.transbox h1{
+        text-align: center;
+        text-shadow: 5px 5px violet;
+        font-weight: bolder;
+       }
+       div.transbox p{
+        text-align: left;
+        font-weight: bold;
+       }
+
+       /*navbar*/
+       ul{
+        list-style-type: none;
+        margin: 0;
+        padding: 0;
+        overflow: hidden;
+        background-color: black;
+        
+       }
+       li{
+        float:left
+        
+       }
+       li a{
+        color: white;
+        display: block;
+        text-align: center;
+        padding: 14px 16px;
+        text-decoration: none;
+       }
+       .active{
+        background-color: #04AA6D;
+       }
+    </style>
+
+    <body>
+        <ul>
+            <li><a class="active" href="#home">Home</a></li>
+            <li><a href="#Contact us">Contact us</a></li>
+            <li><a href="#Help">Help</a></li>
+        </ul>
+
+        <div class="text">
+            <div class="transbox">
+                <h1>Welcome to our website</h1>
+                <p>Hellllllo</p>
+            </div>
+        </div>
+
+    </body>
+</html>
